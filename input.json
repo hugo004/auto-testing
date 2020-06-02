@@ -1,0 +1,109 @@
+{
+  "name": "Reg flow",
+  "target": "https://hkideas-registration.clinicone.xyz/",
+  "quit": true,
+  "steps": [
+    {
+      "name": "",
+      "xpath": "//*[@id=\"app\"]/div/main/div/div[2]/div/div[2]/form/div/div[2]/button[2]",
+      "type": "button",
+      "action": "click",
+      "value": "",
+      "delay": 0
+    },
+    {
+      "name": "",
+      "xpath": "//div[contains(., 'Title *') and @class='v-input__slot']",
+      "type": "",
+      "action": "click",
+      "value": "",
+      "delay": 0
+    },
+    {
+      "name": "",
+      "xpath": "//*[@id=\"list-item-113-0\"]/div",
+      "action": "click",
+      "value": "",
+      "delay": 1
+    },
+    {
+      "name": "",
+      "xpath": "//label[contains(., \"First Name\")]//following::input[1]",
+      "action": "input",
+      "value": "test",
+      "delay": 0,
+      "rule": "[a-zA-Z]{3,}",
+      "generate": true
+    },
+    {
+      "name": "",
+      "xpath": "//label[contains(., \"Surname\")]//following::input[1]",
+      "value": "test",
+      "action": "input",
+      "rule": "[a-zA-Z]{3,}",
+      "generate": true,
+      "delay": 0
+    },
+    {
+      "name": "",
+      "xpath": "//*[@id=\"app\"]/div/main/div/div[2]/div/div[2]/form/div[3]/div[1]/div/div/div[1]",
+      "action": "click",
+      "delay": 0
+    },
+    {
+      "xpath": "//*[@id=\"list-item-122-0\"]/div",
+      "action": "click",
+      "delay": 0
+    },
+    {
+      "xpath": "//label[contains(., \"Address\")]//following::input[1]",
+      "action": "input",
+      "value": "address",
+      "rule": "[a-zA-Z 0-9]{6,}",
+      "delay": 0
+    },
+    {
+      "xpath":  "//label[contains(., \"Telephone\")]//following::input[1]",
+      "action": "input",
+      "value": "12345678",
+      "rule": "[0-9]{8}",
+      "generate": true,
+      "delay": 0
+    },
+    {
+      "xpath":  "//label[contains(., \"Email\")]//following::input[1]",
+      "action": "input",
+      "value": "auto@gmail.com",
+      "rule": "(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])",
+      "delay": 0
+    },
+    {
+      "xpath":  "//label[contains(., \"Confirm Email\")]//following::input[1]",
+      "action": "input",
+      "value": "auto@gmail.com",
+      "delay": 0
+    },
+    {
+      "xpath": "//label[contains(., \"Password\")]//following::input[1]",
+      "action": "input",
+      "value": "123456",
+      "delay": 0
+    },
+    {
+      "xpath": "//label[contains(., \"Confirm Password\")]//following::input[1]",
+      "action": "input",
+      "value": "123456",
+      "delay": 0
+    },
+    {
+      "xpath": "//*[@id=\"app\"]/div[1]/main/div/div[2]/div/div[2]/form/div[5]/div[1]/div/div/div[1]",
+      "action": "click",
+      "delay": 0
+    },
+    {
+      "xpath": "//*[@id=\"list-item-135-0\"]",
+      "action": "click",
+      "delay": 0
+    }
+  ]
+}
